@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap');
+
+*, *::after, *::before {
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    background: linear-gradient(135deg,#230846,#ff2525);
+    font-family: 'Poppins', sans-serif;
+    justify-content: center;
+    align-items: center;
+    background-size: auto;
+}
+h1{
+    font-size: 4rem;
+    color: #fff;
+    text-transform: uppercase;
+    text-align: center;
+}
+.calc-grid{
+    margin: 20px 600px;
+    display: grid;
+    grid-template-columns: repeat(4, 6rem);
+    grid-template-rows: minmax(7rem, auto) repeat(5,6rem);
+}
+.calc-grid > button{
+    cursor: pointer;
+    font-size: 2rem;
+    border: white solid 0.5px;
+    outline: none;
+    background-color: rgba(57, 0, 86, 0.385);
+    color: white;
+    border-radius: 15px;
+    transition: all 0.2s;
+    -webkit-transition: all 0.2s;
+    -moz-transition: all 0.2s;
+    -ms-transition: all 0.2s;
+    -o-transition: all 0.2s;
+}
+.calc-grid>button:hover{
+    color: #000;
+    background-color: rgba(255, 255, 255, 0.629);
+    transform: translateY(-3px) scale(0.95);
+    -webkit-transform: translateY(-3px) scale(0.95);
+    -moz-transform: translateY(-3px) scale(0.95);
+    -ms-transform: translateY(-3px) scale(0.95);
+    -o-transform: translateY(-3px) scale(0.95);
+}
+.span-two{
+    grid-column: span 2;
+}
+.output-screen{
+    grid-column: 1 / -1;
+    background-color:rgba(39, 1, 79, 0.35);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: space-around;
+    padding: 0.75rem;
+    word-wrap: break-word;
+    word-break: break-all;
+}
+.output-screen .prev-op{
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 1.5rem;
+}
+.output-screen .current-op {
+    color: rgba(255, 255, 255, 1);
+    font-size: 2.5rem;
+}
