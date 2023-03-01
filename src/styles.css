@@ -6,7 +6,8 @@
 
 body{
     margin: 0;
-    background: linear-gradient(135deg,#230846,#ff2525);
+    background: rgb(69,26,121);
+    background: radial-gradient(circle, rgba(69,26,121,1) 0%, rgba(18,8,31,1) 100%);
     font-family: 'Poppins', sans-serif;
     justify-content: center;
     align-items: center;
